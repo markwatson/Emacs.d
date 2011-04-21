@@ -1,0 +1,82 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("e:/home/watsonm/.emacs.d/" . "elpa-to-submit/")
+ ("e:/Work/filters/" . "tpfilter/")
+ ("e:/Work/" . "filters/")
+ ("e:/" . "Work/")
+ ("g:/Noble/sample_code/insertion_parsers/" . "lot_data/")
+ ("e:/home/" . "watsonm/")
+ ("g:/Noble/sample_code/" . "stdf_library/")
+ ("g:/Noble/" . "sample_code/")
+ ("g:/" . "Noble/")
+ ("e:/home/watsonm/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "e:/home/watsonm/.emacs.d/"
+ "g:/Noble/sample_code/stdf_library/"
+ "g:/Noble/sample_code/"
+ "e:/Work/filters/tpfilter/"
+ "e:/home/watsonm/.emacs.d/elpa-to-submit/"
+ "e:/Work/filters/doffilter/"
+ "e:/home/watsonm/"
+ "g:/Noble/sample_code/vector_converter/"
+ "g:/Noble/sample_code/insertion_parsers/lot_data/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "watsonm.el"
+ "stdf_ptr.c"
+ "stdf_common.c"
+ "stdf_ptr.h"
+ "test_ptr.c"
+ ".emacs"
+ "init.el"
+ "stdf_common.h"
+ "ptr_example_with_and_without_opt.txt"
+ "tpfilter.g"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("e:/home/watsonm/" (19544 31629) "_viminfo" "_ipython/" "watsonm.zip" "test/" "log.txt" "hash_collision.py" "emacs.7z" "code/" "bak2.emacs" ".zshrc" ".recentf" ".ido.last" ".gitk" ".gitconfig" ".emacs~" ".emacs.d.bak/" ".emacs.d/" ".emacs.bak" "#hash_collision.py#" "#.emacs#" "../" "./")
+
+ ("g:/Noble/sample_code/stdf_library/" (19544 31715) "Debug/" "make.bat" "stdf_common.obj" "#stdf_ptr.c#" "stdf_common.c" "test_ptr.c" ".gitignore" ".git/" "ptr_example_with_and_without_opt.txt" "stdf_records_mark.xls" "stdfv4-spec.pdf" "stdf_ptr.c" "stdf_records.xls" "stdf_common.h" "stdf_ptr.h" "stdf_prr.h" "stdf_far.h" "../" "./")
+
+ ("e:/home/watsonm/.emacs.d/" (19544 31146) "watsonm.el" "TODO" "starter-kit-ruby.el" "starter-kit-registers.el" "starter-kit-perl.el" "starter-kit-misc.el" "starter-kit-lisp.el" "starter-kit-js.el" "starter-kit-eshell.el" "starter-kit-elpa.el" "starter-kit-defuns.el" "starter-kit-bindings.el" "ring+.el" "README.markdown" "places" "package.el" "loaddefs.el" "init.el" "elpa-to-submit/" "elpa/" "doremi.el" "doremi-cmd.el" "dominating-file.el" "custom.el" "COPYING" "backups/" "auto-save-list/" ".gitignore" "../" "./")
+
+ ("e:/home/watsonm/.emacs.d/elpa-to-submit/" (19536 26351) "zenburn.el" "twilight.el" "tt-mode.el" "textile-mode.el" "scpaste.el" "ruby-electric.el" "ri.el" "pod-mode.el" "perl-find-library.el" "pcmpl-rake.el" "paredit.el" "oddmuse.el" "notify.el" "moz.el" "markdown-mode.el" "javadoc-help.el" "htmlize.el" "espresso.el" "eshell-vc.el" "erc-highlight-nicknames.el" "cperl-mode.el" "color-theme.el" "cheat.el" "blackboard.el" "../" "./")
+
+ ("e:/Work/filters/tpfilter/" (19539 19091) "x.tp" "vc.mak.~1.1.~" "vc.mak" "updated_tpfilter.7za" "tpfilter_scan_guidelines.txt" "tpfilter.obj" "tpfilter.g" "tpfilter.exe" "tpfilter.c" "tpfilter-pre-scan.g" "tokens.h" "t" "scan.obj" "scan.c" "Root" "Repository" "parser.dlg" "mode.h" "makefile.~1.2.~" "makefile" "g272a_sc.tp" "g038b_sc.tp" "g022d_lh.tp" "g022d_fc.tp" "g022d_av.tp" "g022d_ac.tp" "err.obj" "err.c" "Entries" "CVS/" "borland.mak.~1.2.~" "borland.mak" ".git/" "#vc.mak#" "#scan.c#" "../" "./")
+
+ ("g:/Noble/sample_code/" (19543 5873) "stdf_library/" "zzt747d.pat" "l3_conversion/" "vector_converter/" "#TGEN_2.2_ChangeLog.txt#" "TGEN_2.2_ChangeLog.txt" "change_log_notes" "iGiveTest_changes.doc" "insertion_parsers/" "PythonSkeleton.py" "Mark Watson Priorities.doc" "JW01E_dof_files/" "zlib_win32.zip" ".emacs" "filters/" "62800.doc" "../" "./")
+
+ ("g:/Noble/" (19543 5269) "sample_code/" "TODO.txt" "dcs-sb/" "registry_registry_dto_java.py" "registry_ibatis_xml.py" "RedBoxKrohnHite/" "Thermonics-Remote PID Commands.doc" "FY2007 Projects With Tools Team Projects Highlighted.doc" "squirrel.bat" "80036tq.mdb.bz2" "OrionReleasedPrograms/" "DatacapPC-Sources/" "Komodo-License-Tim/" "80036tq.mdb.gz.bz2" "MathToolsComparisonPrintable.xls" "Proposed new group_hours 0626.xls" "mc3/" "TesterNetwork/" "doc/" "KarlsonHandoff/" "Copy of Proposed new group_hours 0626.xls" "PLcomboReviewValue.xls" "jdk1.5.0_16-win32-installed.7z" "db/" "CDLabel_JW01.doc" "tmp.doc" "status/" "WinSPC Documentation and Sample Code/" "CognexJobs/" "rn001b_20080407.zip" "DatacapPC-Binaries/" "AvailabilityOfficeSign.doc" "Mark-machine-OMRON-controller-docs/" "cd_labels/" "WaferMaps/" "sql/" "Leon-stuff/" "DCParametricSamples/" "DA01code/" "OrionTestProgramLoader-source-1.0.zip" "MathToolsComparison.xls" "DesignDocs/" "ScreenShots/" "scripts/" "OrionTesterDocs/" "80036tqNEW.mdb.bz2" "tmp/" "util/" "niHSDIO/" "80036TO.mdb.gz" "The Sun Hardware Reference FAQ.htm" "YB03_DNL_INL-algorithm.xls.gz" "80036tp.mdb.bz2" "Wilson 48_xxxx Doc/" "OrionTestProgramLoader.zip" "NI-USB-RS485-Manuals/" "centraScreenShots/" "VBA/" "statit_work/" "RN01-U6-U5-V1.00-verify.txt" "OrionCorrelation/" "sample_content_pics.doc" "stuff/" "OrionScreenShots/" "Multi-temp-merge-actions.txt" "The Sun Hardware Reference FAQ_files/" "PPEJumpStart_bak/" "GroupHours-1.0-20070730.zip" "rn002d_20080407.zip" "burnin_newxfer.zip" "../" "./")
+
+ ("e:/Work/" (19536 44944) "~$sertionDataLoaderRequirements.doc" "zlib_win32/" "wa04_tgen_test/" "tgen_docs_sample_tests/" "python_scripts/" "pccts/" "Insertions.pdf" "InsertionDataLoaderRequirements.doc" "igivetests/" "filters.zip" "filters.bak/" "filters/" "Appendix A Updated.doc" "62800.doc" "../" "./")
+
+ ("e:/Work/filters/doffilter/" (19536 25283) "vc.mak" "tokens.h" "test.dof" "scan.obj" "scan.c" "parser.dlg" "mode.h" "makefile" "err.obj" "err.c" "doffilter.obj" "doffilter.g" "doffilter.exe" "doffilter.c" "doffilter-pre-scan.g" "CVS/" "borland.mak" "#doffilter.g#" "../" "./")
+
+ ("e:/home/watsonm/.emacs.d/auto-save-list/" (19536 19637) ".saves-5976-TOPS-COM2~" ".saves-5904-TOPS-COM2~" ".saves-5824-TOPS-COM2~" ".saves-5740-TOPS-COM2~" ".saves-5572-TOPS-COM2~" ".saves-5536-TOPS-COM2~" ".saves-5500-TOPS-COM2~" ".saves-5284-TOPS-COM2~" ".saves-524-TOPS-COM2~" ".saves-4748-TOPS-COM2~" ".saves-4744-TOPS-COM2~" ".saves-4404-TOPS-COM2~" ".saves-4288-TOPS-COM2~" ".saves-4192-TOPS-COM2~" ".saves-3952-TOPS-COM2~" ".saves-3916-TOPS-COM2~" ".saves-3228-TOPS-COM2~" ".saves-2796-TOPS-COM2~" ".saves-1820-TOPS-COM2~" ".saves-1768-TOPS-COM2~" ".saves-1700-TOPS-COM2~" ".saves-1664-TOPS-COM2~" "../" "./")
+
+ ("g:/Noble/sample_code/vector_converter/" (19533 52308) "g022d_lh.tp" "g022d_fc.tp" "g022d_av.tp" "g022d_ac.tp" "x.out_APSOKPAT.dp" "x.out_SH_PATX4.dp" "x.out_BG_INIT.dp" "x.out_CAL.dp" "x.filtered.pat" "zzt747d.pat.gz" "vector_converter.pyc" "out.dp" "x" "dp_samples.dp" "#dp_samples.dp#" "pin_remaps.pr" "test_dof_to_dp.pyc" "vector_converter.py" "jw01e_afpat5nx1.dof" "jw01e_afpat5nx1.dp" "output_sample.txt" ".git/" "jw01e_apsok.temp.dof" "standard_dp_header.txt" "jw01e_apsok.dof" "jw01e_vrpat.dof" "jw01e_bg_init.dof" "jw01e_ascpat5nx2.dof-keep" "jw01e_apsok.dp" "jw01e_shpat_x1.dp" "test_dof_to_dp.py" "#vector_converter.py#" "jw01e.dp" "jw01e_shpat_x1.dof" "jw01e_vrpat.dp" "unit_test_input1.dp" "unit_test_input1.dof_parsed" "unit_test_input1.dof" "test.dp" "x.pat" "zz_pat_search_and_replace_notes.txt" "converter_requirements.txt" "jw01e_bg_init.dp" "first.dp" "datacapBenchmark.dp" "jw01e_fc.dp" "jw01e.fc_dof" "../" "./")
+
+ ("e:/Work/filters/" (19533 49317) "y/" "x/" "vc.mak" "tpfilter.g" "tpfilter-bak.zip" "tpfilter/" "test_files/" "patfilter-old/" "patfilter/" "makefile" "Entries" "dtgfilter.g" "dtgfilter/" "doffilter.g" "doffilter/" "diofilter.g" "diofilter/" "ddcfilter.g" "ddcfilter/" "CVS/" "confilter.g" "confilter/" "common/" "borland.mak" "bin/" "ashfilter.g" "ashfilter/" "#tpfilter#" "../" "./")
+
+ ("g:/Noble/sample_code/insertion_parsers/lot_data/" (19519 31840) "j750/" "trillium/" "lot_data_parser.pyc" "test_lot_data_parser.pyc" "tests/" "test_lot_data_parser.py" "lot_data_parser.py" "../" "./")
+
+ ("g:/Noble/sample_code/insertion_parsers/" (19518 17140) "tiger/" "trillium-csv/" "lot_data/" ".gitignore" "InsertionDataLoaderRequirements.doc" ".git/" "j750/" "trillium/" "../" "./")
+
+ ("e:/Work/filters/filters/patfilter/" (19524 30214) "x" "vc.mak" "tokens.h" "test.dof" "scan.obj" "scan.c" "patfilter.obj" "patfilter.g" "patfilter.c" "parser.dlg" "mode.h" "makefile" "err.obj" "err.c" "borland.mak" "../" "./")
+
+ ("e:/home/" (19469 29687) "watsonm/" "bennett/" "../" "./")
+
+ ("e:/unix/opt/emacs/bin/" (19429 31494) "sorted-doc.exe" "runemacs.exe" "movemail.exe" "libXpm.dll" "hexl.exe" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "ebrowse.exe" "digest-doc.exe" "ddeclient.exe" "ctags.exe" "COPYING" "cmdproxy.exe" "addpm.exe" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
