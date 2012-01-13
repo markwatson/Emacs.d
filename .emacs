@@ -12,6 +12,8 @@
 
 (add-to-list 'load-path "~/.emacs.d")
 
+(cd "E:/Work/Projects")
+
 ;;;;;;;;;;;;;
 ;; Mods
 ;;;;;;;;;;;;;
@@ -66,7 +68,7 @@
   (menu-bar-mode 1))
 
 ;; fonts
-(set-default-font "Terminus")
+(set-default-font "ProggyOptiSmallBP")
 
 ;; you know you looking at a winner...
 (when (fboundp 'winner-mode)
@@ -90,6 +92,10 @@
 (define-key global-map [\M-s]   'my-trim-spaces-ateol-and-save)
 (define-key global-map "\C-x\C-s" 'my-trim-spaces-ateol-and-save)
 (define-key global-map "\C-cs" 'my-trim-spaces-ateol-and-save)
+
+;; Package.el
+(require 'package)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 ;; Special cursor
 ;; Change cursor color according to mode; inspired by
@@ -120,6 +126,12 @@
 
 (add-hook 'post-command-hook 'djcb-set-cursor-according-to-mode)
 
+;; Highlight current line
+(require 'highlight-current-line)
+(highlight-current-line-on t)
+
+;; To customize the background color
+(set-face-background 'highlight-current-line-face "#222")
 
 ;;;;;;;;;;;;;;;;;
 ;; Load languages
@@ -129,6 +141,14 @@
 (require 'ido)
 (ido-mode t)
 (setq ido-enable-flex-matching t) ;; enable fuzzy matching
+
+;; smex
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; haskell
 ;(load "~/.emacs.d/haskell/haskell-site-file")
@@ -193,16 +213,28 @@
 (setq antlr-indent-style "")
 
 ;; --------------------------------------------------------------
+;; Functions
+;; --------------------------------------------------------------
+
+
+
+;; --------------------------------------------------------------
 ;; Key mappings
+;; --------------------------------------------------------------
+(global-set-key (kbd "RET") 'newline-and-indent)
 (define-key esc-map "s" 'my-trim-spaces-ateol-and-save)
 (define-key global-map [\M-s]   'my-trim-spaces-ateol-and-save)
 (define-key global-map "\C-x\C-s" 'my-trim-spaces-ateol-and-save)
 (define-key global-map "\C-cs" 'my-trim-spaces-ateol-and-save)
 ;(global-set-key   [(meta s)] 'save-buffer)
 
-(global-unset-key "\C-l")
-(global-set-key   "\C-l\C-l" 'recenter)
-(global-set-key   "\C-q" 'other-window)
+;; (define-key global-map "\C-3" 'comment-region)
+;; (define-key global-map "\M-3" 'uncomment-region)
+;; (define-key global-map "\C-x\C-3" 'uncomment-region)
+
+;(global-unset-key "\C-l")
+;(global-set-key   "\C-l\C-l" 'recenter)
+(global-set-key   "\C-u" 'other-window)
 
 (global-set-key   [end]  'end-of-line)
 (global-set-key   [(control end)] 'end-of-buffer)
@@ -213,18 +245,41 @@
 ;; The following lines are always needed.  Choose your own keys.
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
-(global-set-key "\C-l\C-y" 'org-store-link)
-(global-set-key "\C-l\C-u" 'org-agenda)
-(global-set-key "\C-l\C-i" 'org-iswitchb)
+;(global-set-key "\C-l\C-y" 'org-store-link)
+;(global-set-key "\C-l\C-u" 'org-agenda)
+;(global-set-key "\C-l\C-i" 'org-iswitchb)
 
 (global-set-key "\C-x\C-m" 'execute-extended-command)
 (global-set-key "\C-c\C-m" 'execute-extended-command)
+
+(global-set-key "\C-x\C-b" 'ido-switch-buffer)
 
 (global-set-key "\M-p" 'scroll-down)
 (global-set-key "\M-n" 'scroll-up)
 (global-set-key (kbd "<C-tab>") 'bury-buffer)
 (global-set-key (kbd "<C-S-_>") 'undo)
-(global-set-key "\C-l\C-o" 'duplicate-line)
+;(global-set-key "\C-l\C-o" 'duplicate-line)
 (global-set-key (kbd "<C-c v>") 'evaluate-buffer)
 
+;; --------------------------------------------------------------
+;; Random tweaks
+; inhibit startup screen
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(inhibit-startup-screen t)
+ '(send-mail-function (quote mailclient-send-it)))
+
+; Change the default width and height
+(add-to-list 'default-frame-alist '(height . 90))
+(add-to-list 'default-frame-alist '(width . 120))
+
 (message "Milkshakes!!")
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
