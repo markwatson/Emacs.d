@@ -1,5 +1,5 @@
 ;;
-;; Mark's emacs file. Taken from a variety of sources.
+;; Mark's emacs file. Taken from a variety of sources. :)
 ;;
 
 (message "Loading pure magic...")
