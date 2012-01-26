@@ -166,6 +166,9 @@
 (setq load-path (cons "~/.emacs.d/org/contrib/lisp" load-path))
 (require 'org-install)
 
+;; python mode
+(require 'python)
+
 ;; cperl-mode
 (autoload 'perl-mode "cperl-mode"
   "alternate mode for editing Perl programs" t)
@@ -181,14 +184,14 @@
 
 ;; Many modes loaded
 (autoload 'php-mode    "php-mode"    "PHP editing mode." t)
-(autoload 'python-mode "python-mode" "Python editing mode." t)
+;(autoload 'python-mode "python-mode" "Python editing mode." t)
 (autoload 'tcl-mode    "tcl-mode"    "TCL editing mode." t)
 (autoload 'sh-script   "sh-mode"     "SH editing mode." t)
 
 (setq auto-mode-alist
       (append '(("\\.test$" . pascal-mode)
                 ("\\.tl$"   . c-mode)
-                ("\\.py$"   . python-mode)
+                ;("\\.py$"   . python-mode)
                 ("\\.py$"   . ropemacs-mode)
                 ("\\.php$"  . php-mode)
                 ("\\.[jwedr]ar$" . archive-mode)
@@ -199,8 +202,8 @@
                 ("\\.(bashrc|.*profile|login|cshrc)$" . sh-script)
                 ) auto-mode-alist))
 
-(setq interpreter-mode-alist
-      (cons '("python" . python-mode) interpreter-mode-alist))
+;(setq interpreter-mode-alist
+;      (cons '("python" . python-mode) interpreter-mode-alist))
 
 ;; Scala
 (require 'scala-mode-auto)
