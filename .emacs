@@ -257,8 +257,8 @@
 
 (global-set-key "\C-x\C-b" 'ido-switch-buffer)
 
-(global-set-key "\M-p" 'scroll-down)
-(global-set-key "\M-n" 'scroll-up)
+;(global-set-key "\M-p" 'scroll-down)
+;(global-set-key "\M-n" 'scroll-up)
 (global-set-key (kbd "<C-tab>") 'bury-buffer)
 (global-set-key (kbd "<C-S-_>") 'undo)
 ;(global-set-key "\C-l\C-o" 'duplicate-line)
