@@ -238,6 +238,7 @@
 ;(global-unset-key "\C-l")
 ;(global-set-key   "\C-l\C-l" 'recenter)
 (global-set-key   [f12] 'other-window)
+(global-set-key   (kbd "C-;") 'other-window)
 
 (global-set-key   [end]  'end-of-line)
 (global-set-key   [(control end)] 'end-of-buffer)
