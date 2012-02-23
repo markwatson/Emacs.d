@@ -133,6 +133,14 @@
 ;; To customize the background color
 (set-face-background 'highlight-current-line-face "#222")
 
+;; Bookmarks
+(require 'bm)
+(global-set-key (kbd "<C-f11>") 'bm-toggle)
+(global-set-key (kbd "<f11>")   'bm-next)
+(global-set-key (kbd "<S-f11>") 'bm-previous)
+(setq bm-marker 'bm-marker-right)
+(setq bm-highlight-style 'bm-highlight-only-fringe)
+
 ;;;;;;;;;;;;;;;;;
 ;; Load languages
 ;;;;;;;;;;;;;;;;;
