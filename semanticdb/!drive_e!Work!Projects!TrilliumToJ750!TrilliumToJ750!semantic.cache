@@ -1,0 +1,354 @@
+;; Object TrilliumToJ750/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "TrilliumToJ750/"
+  :tables (list 
+   (semanticdb-table "outputers.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("operator" include nil nil [31 46])
+            ("re" include nil nil [47 56])
+            ("sys" include nil nil [57 67])
+            ("jinja2" include nil nil [68 113])
+            ("try" code nil nil [114 208])
+            ("itertools" include nil nil [208 234])
+            ("pprint" include nil nil [235 260])
+            ("utils" include nil nil [262 281])
+            ("output_templates" include nil nil [282 326])
+            ("NUM, UNIT" code nil nil [328 344])
+            ("TIMESET_SHT_NAME" variable nil nil [703 730])
+            ("J750_TO_TRILLIUM_LEVEL_PARAMS" variable nil nil [732 896])
+            ("VDD_VALUES" variable nil nil [924 999])
+            ("PIN_LEVEL_UNIT_SCALE" variable nil nil [1083 1363])
+            ("scaled_num" function (:arguments 
+              ( ("num" variable nil (reparse-symbol function_parameters) [1380 1383]))              ) nil [1365 1955])
+            ("DcSpecsMetadata" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2028 2032]))                      ) (reparse-symbol indented_block_body) [2015 14520])
+                    ("lookup_value" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [14542 14546])
+                        ("data" variable nil (reparse-symbol function_parameters) [14548 14552])
+                        ("r" variable nil (reparse-symbol function_parameters) [14554 14555])
+                        ("ret" variable nil (reparse-symbol function_parameters) [14557 14560]))                      ) (reparse-symbol indented_block_body) [14525 15026])
+                    ("generate_formulas_and_values" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [15065 15069])
+                        ("all_levels_data" variable nil (reparse-symbol function_parameters) [15071 15086]))                      ) (reparse-symbol indented_block_body) [15032 18972])
+                    ("default_formula" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [18997 19001])
+                        ("vals" variable nil (reparse-symbol function_parameters) [19003 19007]))                      ) (reparse-symbol indented_block_body) [18977 19180])
+                    ("neg_expand" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [19200 19204])
+                        ("vals" variable nil (reparse-symbol function_parameters) [19206 19210]))                      ) (reparse-symbol indented_block_body) [19185 19300])
+                    ("pos_offset_expand" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [19327 19331])
+                        ("vals" variable nil (reparse-symbol function_parameters) [19333 19337]))                      ) (reparse-symbol indented_block_body) [19305 19525])
+                    ("neg_offset_expand" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [19552 19556])
+                        ("vals" variable nil (reparse-symbol function_parameters) [19558 19562]))                      ) (reparse-symbol indented_block_body) [19530 19668])
+                    ("half_expand" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [19689 19693])
+                        ("vals" variable nil (reparse-symbol function_parameters) [19695 19699]))                      ) (reparse-symbol indented_block_body) [19673 19905]))                  
+                :type "class")
+                nil [1957 19905])
+            ("GlobalSpecsHandler" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""
+    This class handles keeping track of all the new global specs values used in the instance sheet.
+    """" code nil (reparse-symbol indented_block_body) [19944 20055])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [20073 20077]))                      ) (reparse-symbol indented_block_body) [20060 20325])
+                    ("add_hi_lo" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [20344 20348])
+                        ("typ" variable nil (reparse-symbol function_parameters) [20350 20353])
+                        ("hi" variable nil (reparse-symbol function_parameters) [20355 20357])
+                        ("lo" variable nil (reparse-symbol function_parameters) [20359 20361]))                      ) (reparse-symbol indented_block_body) [20330 20610])
+                    ("get_instance_name" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [20637 20641])
+                        ("typ" variable nil (reparse-symbol function_parameters) [20643 20646])
+                        ("hi" variable nil (reparse-symbol function_parameters) [20648 20650])
+                        ("lo" variable nil (reparse-symbol function_parameters) [20652 20654]))                      ) (reparse-symbol indented_block_body) [20615 21195])
+                    ("add_qidd" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [21213 21217])
+                        ("values" variable nil (reparse-symbol function_parameters) [21219 21225]))                      ) (reparse-symbol indented_block_body) [21200 22209]))                  
+                :type "class")
+                nil [19906 22209])
+            ("OutputJ750Files" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [22260 22264])
+                        ("program_name" variable nil (reparse-symbol function_parameters) [22266 22278])
+                        ("out_dir" variable nil (reparse-symbol function_parameters) [22280 22287])
+                        ("pin_groups" variable nil (reparse-symbol function_parameters) [22289 22299])
+                        ("pin_order" variable nil (reparse-symbol function_parameters) [22301 22310])
+                        ("spec_dat" variable nil (reparse-symbol function_parameters) [22312 22320])
+                        ("spec_dat_order" variable nil (reparse-symbol function_parameters) [22322 22336])
+                        ("timing_settings" variable nil (reparse-symbol function_parameters) [22355 22370])
+                        ("timeset_vectors" variable nil (reparse-symbol function_parameters) [22372 22387])
+                        ("levels" variable nil (reparse-symbol function_parameters) [22389 22395])
+                        ("sh_data" variable nil (reparse-symbol function_parameters) [22397 22404])
+                        ("stop_labels" variable nil (reparse-symbol function_parameters) [22406 22417])
+                        ("pfile_path_name" variable nil (reparse-symbol function_parameters) [22419 22434])
+                        ("dont_init" variable nil (reparse-symbol function_parameters) [22453 22462])
+                        ("pin_name_fixer" variable nil (reparse-symbol function_parameters) [22470 22484]))                      ) (reparse-symbol indented_block_body) [22247 26707])
+                    ("init" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [26721 26725]))                      ) (reparse-symbol indented_block_body) [26712 27255])
+                    ("_process_spec_dat" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [27282 27286]))                      ) (reparse-symbol indented_block_body) [27260 27582])
+                    ("_fmt_level_pingrp" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [27609 27613])
+                        ("name" variable nil (reparse-symbol function_parameters) [27615 27619]))                      ) (reparse-symbol indented_block_body) [27587 28636])
+                    ("_compact_timesets" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [28663 28667]))                      ) (reparse-symbol indented_block_body) [28641 30184])
+                    ("_pingroup_ext" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [30207 30211])
+                        ("name" variable nil (reparse-symbol function_parameters) [30213 30217]))                      ) (reparse-symbol indented_block_body) [30189 30437])
+                    ("_iter_ts_vect_pins" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [30465 30469])
+                        ("ts_name" variable nil (reparse-symbol function_parameters) [30471 30478])
+                        ("ts_char" variable nil (reparse-symbol function_parameters) [30480 30487]))                      ) (reparse-symbol indented_block_body) [30442 30779])
+                    ("_pingroup_intersection" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [30811 30815])
+                        ("ts_name" variable nil (reparse-symbol function_parameters) [30817 30824])
+                        ("ts_char" variable nil (reparse-symbol function_parameters) [30826 30833])
+                        ("drive_grp" variable nil (reparse-symbol function_parameters) [30835 30844])
+                        ("cmp_grp" variable nil (reparse-symbol function_parameters) [30846 30853]))                      ) (reparse-symbol indented_block_body) [30784 31653])
+                    ("_build_timing_structures" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [31687 31691]))                      ) (reparse-symbol indented_block_body) [31658 37136])
+                    ("_build_short_timing_pin_groups" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [37176 37180]))                      ) (reparse-symbol indented_block_body) [37141 39399])
+                    ("_get_period" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [39420 39424])
+                        ("prefix_in" variable nil (reparse-symbol function_parameters) [39426 39435])
+                        ("tset" variable nil (reparse-symbol function_parameters) [39437 39441]))                      ) (reparse-symbol indented_block_body) [39404 40995])
+                    ("get_timesets" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [41017 41021]))                      ) (reparse-symbol indented_block_body) [41000 43574])
+                    ("_correct_pname" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [43598 43602])
+                        ("name" variable nil (reparse-symbol function_parameters) [43604 43608]))                      ) (reparse-symbol indented_block_body) [43579 43805])
+                    ("_build_all_pins_sets" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [43835 43839]))                      ) (reparse-symbol indented_block_body) [43810 44854])
+                    ("_get_channel_name" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [44881 44885])
+                        ("pin_name" variable nil (reparse-symbol function_parameters) [44887 44895]))                      ) (reparse-symbol indented_block_body) [44859 45031])
+                    ("get_channel_map" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [45056 45060]))                      ) (reparse-symbol indented_block_body) [45036 45244])
+                    ("get_pin_groups" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [45268 45272]))                      ) (reparse-symbol indented_block_body) [45249 48253])
+                    ("_fmt_level_value" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [48279 48283])
+                        ("param_value" variable nil (reparse-symbol function_parameters) [48285 48296])
+                        ("type" variable nil (reparse-symbol function_parameters) [48298 48302]))                      ) (reparse-symbol indented_block_body) [48258 48558])
+                    ("_kinda_equal" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [48580 48584])
+                        ("a" variable nil (reparse-symbol function_parameters) [48586 48587])
+                        ("b" variable nil (reparse-symbol function_parameters) [48589 48590])
+                        ("closeness" variable nil (reparse-symbol function_parameters) [48592 48601]))                      ) (reparse-symbol indented_block_body) [48563 48775])
+                    ("report_pattern_conversion_data" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [48815 48819])
+                        ("timeset_transformations" variable nil (reparse-symbol function_parameters) [48821 48844]))                      ) (reparse-symbol indented_block_body) [48780 49717])
+                    ("report_infered_groupings" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [49751 49755])
+                        ("new_pin_groups" variable nil (reparse-symbol function_parameters) [49757 49771]))                      ) (reparse-symbol indented_block_body) [49722 49928])
+                    ("_pins_from_drive_compare_info" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [49967 49971])
+                        ("prefix" variable nil (reparse-symbol function_parameters) [49973 49979])
+                        ("name" variable nil (reparse-symbol function_parameters) [49981 49985]))                      ) (reparse-symbol indented_block_body) [49933 50299])
+                    ("report_generated_timing_groups" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [50339 50343]))                      ) (reparse-symbol indented_block_body) [50304 51649])
+                    ("validate_dcspec_value" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [51680 51684])
+                        ("m" variable nil (reparse-symbol function_parameters) [51686 51687])
+                        ("c" variable nil (reparse-symbol function_parameters) [51689 51690])
+                        ("power" variable nil (reparse-symbol function_parameters) [51692 51697])
+                        ("test_name" variable nil (reparse-symbol function_parameters) [51699 51708])
+                        ("driver" variable nil (reparse-symbol function_parameters) [51710 51716])
+                        ("parameter" variable nil (reparse-symbol function_parameters) [51718 51727]))                      ) (reparse-symbol indented_block_body) [51654 52883])
+                    ("get_dcspec_line" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [52909 52913])
+                        ("sym" variable nil (reparse-symbol function_parameters) [52915 52918])
+                        ("name" variable nil (reparse-symbol function_parameters) [52920 52924])
+                        ("room_typ" variable nil (reparse-symbol function_parameters) [52926 52934])
+                        ("room_min" variable nil (reparse-symbol function_parameters) [52936 52944])
+                        ("room_max" variable nil (reparse-symbol function_parameters) [52946 52954])
+                        ("hot_typ" variable nil (reparse-symbol function_parameters) [52956 52963])
+                        ("hot_min" variable nil (reparse-symbol function_parameters) [52965 52972])
+                        ("hot_max" variable nil (reparse-symbol function_parameters) [52974 52981])
+                        ("cold_typ" variable nil (reparse-symbol function_parameters) [52983 52991])
+                        ("cold_min" variable nil (reparse-symbol function_parameters) [52993 53001])
+                        ("cold_max" variable nil (reparse-symbol function_parameters) [53003 53011]))                      ) (reparse-symbol indented_block_body) [52889 53418])
+                    ("get_dcspec_formula" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [53446 53450])
+                        ("vdd_id" variable nil (reparse-symbol function_parameters) [53452 53458])
+                        ("mult_val" variable nil (reparse-symbol function_parameters) [53460 53468])
+                        ("const_val" variable nil (reparse-symbol function_parameters) [53470 53479])
+                        ("gb_name" variable nil (reparse-symbol function_parameters) [53481 53488]))                      ) (reparse-symbol indented_block_body) [53423 53638])
+                    ("get_dcspecs" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [53659 53663]))                      ) (reparse-symbol indented_block_body) [53643 54703])
+                    ("get_sh_characterization_data" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [54741 54745]))                      ) (reparse-symbol indented_block_body) [54708 55938])
+                    ("get_test_instances" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [55966 55970]))                      ) (reparse-symbol indented_block_body) [55943 74978])
+                    ("drive_letter" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [75000 75004])
+                        ("drive_str" variable nil (reparse-symbol function_parameters) [75006 75015]))                      ) (reparse-symbol indented_block_body) [74983 75324])
+                    ("format_excel_num" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [75351 75355])
+                        ("num" variable nil (reparse-symbol function_parameters) [75357 75360])
+                        ("unit" variable nil (reparse-symbol function_parameters) [75362 75366]))                      ) (reparse-symbol indented_block_body) [75330 75495])
+                    ("get_global_spex" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [75520 75524]))                      ) (reparse-symbol indented_block_body) [75500 75931])
+                    ("output_file" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [75952 75956])
+                        ("template" variable nil (reparse-symbol function_parameters) [75958 75966])
+                        ("out_file_name" variable nil (reparse-symbol function_parameters) [75968 75981])
+                        ("data" variable nil (reparse-symbol function_parameters) [75983 75987]))                      ) (reparse-symbol indented_block_body) [75936 76313])
+                    ("output_files" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [76335 76339])
+                        ("timeset_transformations" variable nil (reparse-symbol function_parameters) [76341 76364])
+                        ("new_pin_groups" variable nil (reparse-symbol function_parameters) [76371 76385]))                      ) (reparse-symbol indented_block_body) [76318 77839]))                  
+                :type "class")
+                nil [22212 77839]))          
+    :file "outputers.py"
+    :pointmax 77872
+    :fsize 77871
+    :lastmodtime '(20302 24465)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "parsers.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "parsers.py"
+    :pointmax 98338
+    :fsize 101535
+    :lastmodtime '(20305 22097)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "output_templates.py"
+    :major-mode 'python-mode
+    :tags 
+        '( (""""
+This file contains the templates for outputing the J750 files.
+"""" code nil nil [1 71])
+            ("jinja2" include nil nil [72 99])
+            ("OutputTemplates" type
+               (:superclasses ("object")
+                :members 
+                  ( ("channel_map" variable nil (reparse-symbol indented_block_body) [136 391])
+                    ("dc_specs" variable nil (reparse-symbol indented_block_body) [397 879])
+                    ("global_specs" variable nil (reparse-symbol indented_block_body) [885 1489])
+                    ("pin_levels" variable nil (reparse-symbol indented_block_body) [1495 2055])
+                    ("pin_map" variable nil (reparse-symbol indented_block_body) [2061 2387])
+                    ("report" variable nil (reparse-symbol indented_block_body) [2393 5166])
+                    ("tset" variable nil (reparse-symbol indented_block_body) [5172 5767])
+                    ("flow_table" variable nil (reparse-symbol indented_block_body) [5773 10629])
+                    ("characterization" variable nil (reparse-symbol indented_block_body) [10635 12908])
+                    ("test_instances" variable nil (reparse-symbol indented_block_body) [12914 16231]))                  
+                :type "class")
+                nil [101 16232]))          
+    :file "output_templates.py"
+    :pointmax 16232
+    :fsize 16231
+    :lastmodtime '(20302 24922)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "utils.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("fnmatch" include nil nil [31 45])
+            ("glob" include nil nil [46 57])
+            ("os" include nil nil [58 67])
+            ("re" include nil nil [68 77])
+            ("functools" include nil nil [78 94])
+            ("try" code nil nil [96 190])
+            ("parse_config_file" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [213 214]))              ) nil [191 471])
+            ("FindFiles" type
+               (:superclasses ("object")
+                :members 
+                  ( ("classmethod" code nil (reparse-symbol indented_block_body) [502 513])
+                    ("_find_one_file" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [537 540])
+                        ("directory" variable nil (reparse-symbol function_parameters) [542 551])
+                        ("file_pattern" variable nil (reparse-symbol function_parameters) [553 565]))                      ) (reparse-symbol indented_block_body) [518 1107])
+                    ("classmethod" code nil (reparse-symbol indented_block_body) [1113 1124])
+                    ("_convert" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [1142 1145])
+                        ("s" variable nil (reparse-symbol function_parameters) [1147 1148]))                      ) (reparse-symbol indented_block_body) [1129 1344])
+                    ("classmethod" code nil (reparse-symbol indented_block_body) [1350 1361])
+                    ("scan_for_test_file" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [1389 1392])
+                        ("directory" variable nil (reparse-symbol function_parameters) [1394 1403])
+                        ("prefix" variable nil (reparse-symbol function_parameters) [1405 1411]))                      ) (reparse-symbol indented_block_body) [1366 1516])
+                    ("classmethod" code nil (reparse-symbol indented_block_body) [1522 1533])
+                    ("get_trillium_files" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [1561 1564])
+                        ("directory" variable nil (reparse-symbol function_parameters) [1566 1575]))                      ) (reparse-symbol indented_block_body) [1538 3222]))                  
+                :type "class")
+                nil [472 3222])
+            ("Error" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [3264 3268])
+                        ("value" variable nil (reparse-symbol function_parameters) [3270 3275]))                      ) (reparse-symbol indented_block_body) [3251 3309])
+                    ("__str__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [3325 3329]))                      ) (reparse-symbol indented_block_body) [3313 3368]))                  
+                :type "class")
+                nil [3223 3368])
+            ("NoConfigFile" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [3417 3421])
+                        ("value" variable nil (reparse-symbol function_parameters) [3423 3428]))                      ) (reparse-symbol indented_block_body) [3404 3462])
+                    ("__str__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [3478 3482]))                      ) (reparse-symbol indented_block_body) [3466 3521]))                  
+                :type "class")
+                nil [3369 3521])
+            ("Warning" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [3565 3569])
+                        ("value" variable nil (reparse-symbol function_parameters) [3571 3576]))                      ) (reparse-symbol indented_block_body) [3552 3610])
+                    ("__str__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [3626 3630]))                      ) (reparse-symbol indented_block_body) [3614 3669]))                  
+                :type "class")
+                nil [3522 3669])
+            ("get_re" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [3682 3683])
+                ("r" variable nil (reparse-symbol function_parameters) [3685 3686]))              ) nil [3671 3976])
+            ("iter_all_re" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [3993 3994])
+                ("r" variable nil (reparse-symbol function_parameters) [3996 3997]))              ) nil [3977 4288])
+            ("PrintUnique" type
+               (:superclasses ("object")
+                :members 
+                  ( (""""
+    A class that keeps track of what it has printed to stdout and won't
+    print anything twice.
+    """" code nil (reparse-symbol indented_block_body) [4320 4429])
+                    ("printed" variable nil (reparse-symbol indented_block_body) [4434 4449])
+                    ("classmethod" code nil (reparse-symbol indented_block_body) [4456 4467])
+                    ("write" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [4482 4485])
+                        ("s" variable nil (reparse-symbol function_parameters) [4487 4488]))                      ) (reparse-symbol indented_block_body) [4472 4657])
+                    ("classmethod" code nil (reparse-symbol indented_block_body) [4663 4674])
+                    ("reset" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [4689 4692]))                      ) (reparse-symbol indented_block_body) [4679 4723]))                  
+                :type "class")
+                nil [4289 4723]))          
+    :file "utils.py"
+    :pointmax 4727
+    :fsize 4905
+    :lastmodtime '(20305 15694)
+    :unmatched-syntax '((punctuation 4662 . 4663) (punctuation 4455 . 4456) (punctuation 1521 . 1522) (punctuation 1349 . 1350) (punctuation 1112 . 1113) (punctuation 501 . 502) (INDENT_BLOCK 255 . 455) (NEWLINE 254 . 255) (COLON 253 . 254) (NAME 235 . 239) (NAME 240 . 244) (AS 248 . 250) (punctuation 5029 . 5030) (punctuation 4823 . 4824) (punctuation 4662 . 4663) (punctuation 4455 . 4456) (punctuation 1521 . 1522) (punctuation 1349 . 1350) (punctuation 1112 . 1113) (punctuation 501 . 502) (INDENT_BLOCK 255 . 455) (NEWLINE 254 . 255) (COLON 253 . 254) (NAME 235 . 239) (NAME 240 . 244) (AS 248 . 250) ($EOI 5091 . 5091) (punctuation 5008 . 5009) (punctuation 4802 . 4803) (punctuation 4662 . 4663) (punctuation 4455 . 4456) (punctuation 1521 . 1522) (punctuation 1349 . 1350) (punctuation 1112 . 1113) (punctuation 501 . 502) (INDENT_BLOCK 255 . 455) (NEWLINE 254 . 255) (COLON 253 . 254) (NAME 235 . 239) (NAME 240 . 244) (AS 248 . 250) (punctuation 5008 . 5009) (punctuation 4802 . 4803) (punctuation 4662 . 4663) (punctuation 4455 . 4456) (punctuation 1521 . 1522) (punctuation 1349 . 1350) (punctuation 1112 . 1113) (punctuation 501 . 502) (INDENT_BLOCK 255 . 455) (NEWLINE 254 . 255) (COLON 253 . 254) (NAME 235 . 239) (NAME 240 . 244) (AS 248 . 250) (punctuation 1112 . 1113) (punctuation 501 . 502) (INDENT_BLOCK 255 . 455) (NEWLINE 254 . 255) (COLON 253 . 254) (NAME 235 . 239) (NAME 240 . 244) (AS 248 . 250) (punctuation 4662 . 4663) (punctuation 4455 . 4456) (punctuation 1521 . 1522) (punctuation 1349 . 1350) (punctuation 1112 . 1113) (punctuation 501 . 502) (INDENT_BLOCK 255 . 455) (NEWLINE 254 . 255) (COLON 253 . 254) (NAME 235 . 239) (NAME 240 . 244) (AS 248 . 250))
+    )
+   )
+  :file "!drive_e!Work!Projects!TrilliumToJ750!TrilliumToJ750!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

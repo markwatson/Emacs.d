@@ -1,0 +1,26 @@
+;; Object TrilliumToJ750/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "TrilliumToJ750/"
+  :tables (list 
+   (semanticdb-table "trillium_to_j750.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [512 522])
+            ("TrilliumToJ750.utils" include nil nil [524 558])
+            ("TrilliumToJ750" include nil nil [559 604])
+            ("pprint" include nil nil [606 631])
+            ("APP" variable nil nil [633 685])
+            ("usage" function nil nil [687 796])
+            ("main" function nil nil [797 6579])
+            ("if" code nil nil [6581 6740]))          
+    :file "trillium_to_j750.py"
+    :pointmax 6597
+    :fsize 6739
+    :lastmodtime '(20305 16226)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!Work!Projects!TrilliumToJ750!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

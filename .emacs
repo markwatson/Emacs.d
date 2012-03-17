@@ -127,11 +127,11 @@
 (add-hook 'post-command-hook 'djcb-set-cursor-according-to-mode)
 
 ;; Highlight current line
-(require 'highlight-current-line)
-(highlight-current-line-on t)
+;(require 'highlight-current-line)
+;(highlight-current-line-on t)
 
 ;; To customize the background color
-(set-face-background 'highlight-current-line-face "#222")
+;(set-face-background 'highlight-current-line-face "#222")
 
 ;; Bookmarks
 (require 'bm)
