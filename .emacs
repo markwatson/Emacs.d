@@ -12,7 +12,7 @@
 
 (add-to-list 'load-path "~/.emacs.d")
 
-(cd "E:/Work/Projects")
+;(cd "E:/Work/Projects")
 
 ;;;;;;;;;;;;;
 ;; Mods
@@ -68,7 +68,7 @@
   (menu-bar-mode 1))
 
 ;; fonts
-(set-default-font "ProggyOptiSmallBP")
+(set-default-font "ProggyCleanTT-12:antialias=none")
 
 ;; you know you looking at a winner...
 (when (fboundp 'winner-mode)
@@ -96,6 +96,7 @@
 ;; Package.el
 (require 'package)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
 
 ;; Special cursor
 ;; Change cursor color according to mode; inspired by
